@@ -243,6 +243,8 @@ static NSString * PreferencesKeyForViewBounds (NSString *identifier)
     
     NSView *controllerView = controller.view;
 
+    [controllerView layoutSubtreeIfNeeded];
+
     // Retrieve current and minimum frame size for the view
     NSString *oldViewRectString = [[NSUserDefaults standardUserDefaults] stringForKey:PreferencesKeyForViewBounds(controller.identifier)];
     NSString *minViewRectString = [_minimumViewRects objectForKey:controller.identifier];
