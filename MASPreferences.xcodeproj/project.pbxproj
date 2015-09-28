@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F16AF8081BA27AFD0022155C /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16AF8001BA27AFD0022155C /* MASPreferencesWindow.xib */; settings = {ASSET_TAGS = (); }; };
+		B5D7E53B1BB9853B000E789C /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D7E53A1BB9853B000E789C /* MASPreferencesWindow.xib */; settings = {ASSET_TAGS = (); }; };
 		F16AF80A1BA27AFD0022155C /* MASPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F16AF8031BA27AFD0022155C /* MASPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F16AF80B1BA27AFD0022155C /* MASPreferencesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F16AF8051BA27AFD0022155C /* MASPreferencesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F16AF80C1BA27AFD0022155C /* MASPreferencesWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F16AF8061BA27AFD0022155C /* MASPreferencesWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,8 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B5D7E53A1BB9853B000E789C /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MASPreferencesWindow.xib; sourceTree = "<group>"; };
 		F16AF7F41BA279F10022155C /* MASPreferences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MASPreferences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F16AF8011BA27AFD0022155C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MASPreferencesWindow.xib; sourceTree = "<group>"; };
 		F16AF8021BA27AFD0022155C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F16AF8031BA27AFD0022155C /* MASPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASPreferences.h; sourceTree = "<group>"; };
 		F16AF8041BA27AFD0022155C /* MASPreferences.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = MASPreferences.modulemap; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 				F16AF8051BA27AFD0022155C /* MASPreferencesViewController.h */,
 				F16AF8061BA27AFD0022155C /* MASPreferencesWindowController.h */,
 				F16AF8071BA27AFD0022155C /* MASPreferencesWindowController.m */,
-				F16AF8001BA27AFD0022155C /* MASPreferencesWindow.xib */,
+				B5D7E53A1BB9853B000E789C /* MASPreferencesWindow.xib */,
 				F16AF8021BA27AFD0022155C /* Info.plist */,
 				F16AF8041BA27AFD0022155C /* MASPreferences.modulemap */,
 				F16AF8031BA27AFD0022155C /* MASPreferences.h */,
@@ -136,7 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F16AF8081BA27AFD0022155C /* MASPreferencesWindow.xib in Resources */,
+				B5D7E53B1BB9853B000E789C /* MASPreferencesWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,17 +152,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F16AF8001BA27AFD0022155C /* MASPreferencesWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F16AF8011BA27AFD0022155C /* en */,
-			);
-			name = MASPreferencesWindow.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F16AF7FA1BA279F10022155C /* Debug */ = {
