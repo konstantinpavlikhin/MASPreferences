@@ -78,6 +78,24 @@ static NSString * PreferencesKeyForViewBounds (NSString *identifier)
 
 - (void)windowDidLoad
 {
+    {{
+        if(floor(NSAppKitVersionNumber) >= NSAppKitVersionNumber10_7)
+        {
+            NSWindowCollectionBehavior behavior = self.window.collectionBehavior;
+
+            behavior &= ~NSWindowCollectionBehaviorFullScreenPrimary;
+
+            behavior |= NSWindowCollectionBehaviorFullScreenAuxiliary;
+
+            if(floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_10)
+            {
+              behavior |= NSWindowCollectionBehaviorFullScreenDisallowsTiling;
+            }
+
+            self.window.collectionBehavior = behavior;
+        }
+    }}
+
     if ([self.title length] > 0)
         [[self window] setTitle:self.title];
 
