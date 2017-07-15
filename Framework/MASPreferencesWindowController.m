@@ -229,11 +229,8 @@ static NSString * PreferencesKeyForViewBounds (NSString *identifier)
             return;
         }
 
-#if __has_feature(objc_arc)
-        [self.window setContentView:[[NSView alloc] init]];
-#else
-        [self.window setContentView:[[[NSView alloc] init] autorelease]];
-#endif
+        [self.window.contentView.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
+
         [_selectedViewController setNextResponder:nil];
         if ([_selectedViewController respondsToSelector:@selector(viewDidDisappear)])
             [_selectedViewController viewDidDisappear];
@@ -308,7 +305,7 @@ static NSString * PreferencesKeyForViewBounds (NSString *identifier)
         if ([controller respondsToSelector:@selector(viewWillAppear)])
             [controller viewWillAppear];
     
-    [self.window setContentView:controllerView];
+    [self.window.contentView addSubview: controllerView];
     [self.window recalculateKeyViewLoop];
     if ([self.window firstResponder] == self.window) {
         if ([controller respondsToSelector:@selector(initialKeyView)])
